@@ -18,12 +18,10 @@ export class IndexComponent implements OnInit {
     //滾動的高度
     var scrollTop = document.documentElement.scrollTop;
     this.scroll = (scrollTop > 0) ? true : false;
-    // scrollY > 0 ? console.log(_Event) : '';
-    // this.Scroll = (scrollY > 0) ? '123' : '456';
   }
   constructor(private router: Router) { }
   toggle(_Number: number) {
-    // this.header = _Number == 0 ? false : true;
+    this.header = _Number == 0 ? false : true;
   }
   ngOnInit() {
   }
