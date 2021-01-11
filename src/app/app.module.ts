@@ -15,16 +15,16 @@ import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
-  declarations: [						
+  declarations: [
     AppComponent,
     IndexComponent,
-      AboutComponent,
-      ServicesComponent,
-      StatsComponent,
-      PortfolioComponent,
-      TeamComponent,
-      ContactComponent
-   ],
+    AboutComponent,
+    ServicesComponent,
+    StatsComponent,
+    PortfolioComponent,
+    TeamComponent,
+    ContactComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule

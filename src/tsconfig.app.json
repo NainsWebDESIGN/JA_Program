@@ -9,16 +9,5 @@
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
-  ],
-  "path": {
-    "@service/*": [
-      "app/service/*"
-    ],
-    "@pipe/*": [
-      "app/pipe/*"
-    ],
-    "@app/*": [
-      "app/*"
-    ]
-  }
+  ]
 }
