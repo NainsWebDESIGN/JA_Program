@@ -1,244 +1,29 @@
 <!--header-->
-<header id="header">
+<header [ngClass]="{'active': header, 'sticky': scroll}" id="header">
   <a href="#" class="logo"><img src="../../assets/image/TSU.png" title="TSU" alt="TSU" height="72" width="72"></a>
   <ul>
-    <li><a href="#home" onclick="toggle()">TSU數位工作室</a></li>
-    <li><a href="#About" onclick="toggle()">關於我們</a></li>
-    <li><a href="#Services" onclick="toggle()">服務項目</a></li>
-    <li><a href="#Portfolio" onclick="toggle()">相關作品</a></li>
-    <li><a href="#Team" onclick="toggle()">我們團隊</a></li>
-    <li><a href="#Contact" onclick="toggle()">聯繫我們</a></li>
+    <li><a href="#home" (click)="toggle(0)">TSU數位工作室</a></li>
+    <li><a href="#About" (click)="toggle(1)">關於我們</a></li>
+    <li><a href="#Services" (click)="toggle(1)">服務項目</a></li>
+    <li><a href="#Portfolio" (click)="toggle(1)">相關作品</a></li>
+    <li><a href="#Team" (click)="toggle(1)">我們團隊</a></li>
+    <li><a href="#Contact" (click)="toggle(1)">聯繫我們</a></li>
   </ul>
-  <div class="toggle" onclick="toggle()"></div>
+  <div class="toggle" (click)="toggle(1)"></div>
 </header>
 <!--banner-->
 <section class="banner" id="home">
   <h2><span>粹星園-TSU</span><br>數位行銷設計工作室</h2>
 </section>
 <!--about-->
-<section class="sec" id="About">
-  <div class="content">
-    <div class="nains800p">
-      <h3>關於我們</h3>
-      <p>
-        是由一群平面設計師、程式設計師組成，我們相信在製作網站的過程中，不能只是設計一個漂亮的畫面，而更為重要的是如何幫助顧客在網路的虛擬世界能達到曝光的效果!森德站在顧客的立場，思考每種產業適合網站的呈現方式，以專業的經驗提供服務與建議。
-        「專業、用心、服務」，是我們對每個顧客所秉持的態度，我們銷售的不單只是網站，而是替顧客解決問題的能力!</p>
-      <a href="#" class="btn">我們的故事</a>
-    </div>
-  </div>
-</section>
+<app-about></app-about>
 <!--services-->
-<section class="sec" id="Services">
-  <div class="content">
-    <div class="nains800p">
-      <h3>服務項目</h3>
-      <p>
-        是由一群平面設計師、程式設計師組成，我們相信在製作網站的過程中，不能只是設計一個漂亮的畫面，而更為重要的是如何幫助顧客在網路的虛擬世界能達到曝光的效果!森德站在顧客的立場，思考每種產業適合網站的呈現方式，以專業的經驗提供服務與建議。
-        「專業、用心、服務」，是我們對每個顧客所秉持的態度，我們銷售的不單只是網站，而是替顧客解決問題的能力!</p>
-    </div>
-    <div class="services">
-      <div class="box">
-        <div class="iconbx">
-          <img src="../../assets/image/html.png" alt="html" title="html">
-        </div>
-        <div class="content">
-          <h2>HTML</h2>
-          <p>站在顧客的立場，思考每種產業適合網站的呈現方式，以專業的經驗提供服務與建議。 「專業、用心、服務」，是我們對每個顧客所秉持的態度，我們銷售的不單只是網站，而是替顧客解決問題的能力!
-          </p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="iconbx">
-          <img src="../../assets/image/css.png" alt="css" title="css" height="75" width="49">
-        </div>
-        <div class="content">
-          <h2>CSS</h2>
-          <p>站在顧客的立場，思考每種產業適合網站的呈現方式，以專業的經驗提供服務與建議。 「專業、用心、服務」，是我們對每個顧客所秉持的態度，我們銷售的不單只是網站，而是替顧客解決問題的能力!
-          </p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="iconbx">
-          <img src="../../assets/image/js.png" alt="javascript" title="javascript" height="85" width="86">
-        </div>
-        <div class="content">
-          <h2>Jvascript</h2>
-          <p>站在顧客的立場，思考每種產業適合網站的呈現方式，以專業的經驗提供服務與建議。 「專業、用心、服務」，是我們對每個顧客所秉持的態度，我們銷售的不單只是網站，而是替顧客解決問題的能力!
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<app-services></app-services>
 <!--stats-->
-<section class="sec stats">
-  <div class="content">
-    <div class="nains800p">
-      <h3>為何選擇我們</h3>
-      <p>站在顧客的立場，思考每種產業適合網站的呈現方式，以專業的經驗提供服務與建議。 「專業、用心、服務」，是我們對每個顧客所秉持的態度，我們銷售的不單只是網站，而是替顧客解決問題的能力!</p>
-    </div>
-    <div class="statsbox">
-      <div class="box">
-        <h2>1200+</h2>
-        <h4>專案管理</h4>
-      </div>
-      <div class="box">
-        <h2>800+</h2>
-        <h4>顧客滿意度</h4>
-      </div>
-      <div class="box">
-        <h2>150+</h2>
-        <h4>國家</h4>
-      </div>
-      <div class="box">
-        <h2>50+</h2>
-        <h4>成就</h4>
-      </div>
-    </div>
-  </div>
-</section>
+<app-stats></app-stats>
 <!--portfolio-->
-<section class="sec work" id="Portfolio">
-  <div class="content">
-    <div class="nains800p">
-      <h3>最新巨作</h3>
-      <p>站在顧客的立場，思考每種產業適合網站的呈現方式，以專業的經驗提供服務與建議。
-        「專業、用心、服務」，是我們對每個顧客所秉持的態度，
-        我們銷售的不單只是網站，而是替顧客解決問題的能力!</p>
-    </div>
-    <div class="workbx">
-      <div class="brand">
-        <a href="#">
-          <h2>品牌名稱</h2>
-        </a>
-      </div>
-      <div class="brand">
-        <a href="#">
-          <h2>品牌名稱</h2>
-        </a>
-      </div>
-      <div class="brand">
-        <a href="#">
-          <h2>品牌名稱</h2>
-        </a>
-      </div>
-      <div class="brand">
-        <a href="#">
-          <h2>品牌名稱</h2>
-        </a>
-      </div>
-      <div class="brand">
-        <a href="#">
-          <h2>品牌名稱</h2>
-        </a>
-      </div>
-      <div class="brand">
-        <a href="#">
-          <h2>品牌名稱</h2>
-        </a>
-      </div>
-      <div class="brand">
-        <a href="#">
-          <h2>品牌名稱</h2>
-        </a>
-      </div>
-      <div class="brand">
-        <a href="#">
-          <h2>品牌名稱</h2>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+<app-portfolio></app-portfolio>
 <!--team-->
-<section class="sec" id="Team">
-  <div class="content">
-    <div class="nains800p">
-      <h3>師資及團隊</h3>
-      <p>站在顧客的立場，思考每種產業適合網站的呈現方式，以專業的經驗提供服務與建議。
-        「專業、用心、服務」，是我們對每個顧客所秉持的態度，
-        我們銷售的不單只是網站，而是替顧客解決問題的能力!</p>
-    </div>
-    <div class="teambx">
-      <div class="member">
-        <div class="imgbx">
-          <img src="../../assets/image/1.jpg" alt="Nains" title="Nains">
-        </div>
-        <div class="nains">
-          <div>
-            <h2>Nains<br><span>執行長</span></h2>
-          </div>
-        </div>
-      </div>
-      <div class="member">
-        <div class="imgbx">
-          <img src="../../assets/image/2.jpg" alt="Jacky" title="Jacky">
-        </div>
-        <div class="nains">
-          <div>
-            <h2>Jacky<br><span>資訊總監</span></h2>
-          </div>
-        </div>
-      </div>
-      <div class="member">
-        <div class="imgbx">
-          <img src="../../assets/image/3.jpg" alt="Todd" title="Todd">
-        </div>
-        <div class="nains">
-          <div>
-            <h2>Todd<br><span>市場總監</span></h2>
-          </div>
-        </div>
-      </div>
-      <div class="member">
-        <div class="imgbx">
-          <img src="../../assets/image/4.jpg" alt="Ray" title="Ray">
-        </div>
-        <div class="nains">
-          <div>
-            <h2>Ray<br><span>創意總監</span></h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<app-team></app-team>
 <!--contact-->
-<section class="sec contact" id="Contact">
-  <div class="content">
-    <div class="nains800p">
-      <h3>我們傾聽您的聲音</h3>
-      <p>「專業、用心、服務」，是我們對每個顧客所秉持的態度!</p>
-    </div>
-    <div class="contactform">
-      <form action="jason20226@gmail.com" method="POST">
-        <div class="row100">
-          <div class="inputbx50">
-            <input type="text" name="" placeholder="姓名">
-          </div>
-          <div class="inputbx50">
-            <input type="text" name="" placeholder="信箱">
-          </div>
-        </div>
-        <div class="row100">
-          <div class="inputbx100">
-            <textarea placeholder="訊息" name="" id="" cols="30" rows="10"></textarea>
-          </div>
-        </div>
-        <div class="row100">
-          <div class="inputbx100">
-            <input type="submit" name="" value="發送">
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="sci">
-      <ul>
-        <li><a href="#"><img src="../../assets/image/facebook.png" alt="fb" title="fb"></a></li>
-        <li><a href="#"><img src="../../assets/image/ig.png" alt="ig" title="ig"></a></li>
-        <li><a href="#"><img src="../../assets/image/phone.png" alt="line" title="line"></a></li>
-      </ul>
-    </div>
-    <p class="copyright">Design & Developed By <a href="#"><strong>Nains</strong></a></p>
-  </div>
-</section>
+<app-contact></app-contact>

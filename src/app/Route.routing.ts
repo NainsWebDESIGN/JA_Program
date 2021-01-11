@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule, Component } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './Index/Index.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'JA', pathMatch: 'full' },
   { path: 'JA', component: IndexComponent },
-  { path: '**', redirectTo: '', pathMatch: 'full' }
+  { path: '**', redirectTo: 'JA', pathMatch: 'full' }
 ];
 
 @NgModule({
