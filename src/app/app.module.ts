@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { IndexComponent } from './Index/Index.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [	
+    AppComponent,
+      IndexComponent
+   ],
   imports: [
     BrowserModule
   ],
